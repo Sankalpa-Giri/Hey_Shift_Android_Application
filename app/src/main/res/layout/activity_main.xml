@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- ===== MAIN SCREEN ===== -->
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FAFBFC">
+
+        <!-- TOP BAR -->
+        <LinearLayout
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="16dp"
+            android:background="#FFFFFF"
+            android:elevation="3dp">
+
+            <!-- Hamburger -->
+            <ImageButton
+                android:id="@+id/btn_menu"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@drawable/btn_circle_outline"
+                android:src="@drawable/menu"
+                android:padding="10dp"
+                android:contentDescription="Menu"/>
+
+            <Space android:layout_width="12dp" android:layout_height="1dp"/>
+
+            <!-- Title block -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HeyShift"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#0A1628"
+                    android:letterSpacing="-0.01"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your co-pilot"
+                    android:textSize="11sp"
+                    android:textColor="#8A95A3"/>
+            </LinearLayout>
+
+            <!-- Chat History icon -->
+            <ImageButton
+                android:id="@+id/btn_chat_history"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/btn_circle_outline"
+                android:src="@android:drawable/ic_menu_recent_history"
+                android:padding="10dp"
+                android:contentDescription="Chat History"/>
+
+            <!-- New Chat button -->
+            <TextView
+                android:id="@+id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="+ New"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:background="@drawable/btn_navy_pill"
+                android:contentDescription="New chat"/>
+        </LinearLayout>
+
+        <!-- CHAT RECYCLER -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chat_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:clipToPadding="false"/>
+
+        <!-- INPUT BAR -->
+        <LinearLayout
+            android:id="@+id/input_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/input_bar_bg"
+            android:elevation="8dp">
+
+            <EditText
+                android:id="@+id/edit_message"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:hint="Ask anything..."
+                android:textColor="#0A1628"
+                android:textColorHint="#BFC8D2"
+                android:textSize="14sp"
+                android:background="@drawable/input_field_clean"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:inputType="text"
+                android:singleLine="true"
+                android:imeOptions="actionSend"/>
+
+            <ImageButton
+                android:id="@+id/btn_mic"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/btn_circle_outline"
+                android:src="@drawable/mic"
+                android:padding="11dp"
+                android:contentDescription="Mic"/>
+
+            <ImageButton
+                android:id="@+id/btn_send"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/btn_gold_circle"
+                android:src="@drawable/send"
+                android:padding="11dp"
+                android:contentDescription="Send"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- ===== LEFT DRAWER ===== -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_drawer"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#FFFFFF"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer_menu"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

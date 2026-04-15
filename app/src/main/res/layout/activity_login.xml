@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFBFC"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp"
+        android:gravity="center_horizontal">
+
+        <!-- Top spacing -->
+        <Space android:layout_width="match_parent" android:layout_height="52dp"/>
+
+        <!-- Brand mark -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="40dp">
+
+            <!-- Gold accent bar -->
+            <View
+                android:layout_width="36dp"
+                android:layout_height="4dp"
+                android:background="@drawable/gold_bar_bg"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HeyShift"
+                android:textSize="38sp"
+                android:textStyle="bold"
+                android:textColor="#0A1628"
+                android:letterSpacing="-0.02"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your intelligent co-pilot"
+                android:textSize="14sp"
+                android:textColor="#8A95A3"
+                android:layout_marginTop="6dp"/>
+        </LinearLayout>
+
+        <!-- Sign In heading -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#0A1628"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome back — let's continue"
+            android:textSize="13sp"
+            android:textColor="#8A95A3"
+            android:layout_marginBottom="28dp"/>
+
+        <!-- Email -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email Address"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textColor="#0A1628"
+            android:letterSpacing="0.08"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="you@example.com"
+            android:inputType="textEmailAddress"
+            android:textColor="#0A1628"
+            android:textColorHint="#BFC8D2"
+            android:textSize="15sp"
+            android:background="@drawable/input_field_clean"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Password -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textColor="#0A1628"
+            android:letterSpacing="0.08"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:textColor="#0A1628"
+            android:textColorHint="#BFC8D2"
+            android:textSize="15sp"
+            android:background="@drawable/input_field_clean"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Login Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="Sign In"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#0A1628"
+            app:cornerRadius="12dp"
+            android:letterSpacing="0.04"
+            android:layout_marginBottom="14dp"/>
+
+        <ProgressBar
+            android:id="@+id/login_progress"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:indeterminateTint="#F5A623"
+            android:visibility="gone"
+            android:layout_marginBottom="14dp"/>
+
+        <!-- Divider -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+            <View android:layout_width="0dp" android:layout_height="1dp"
+                android:layout_weight="1" android:background="#E8ECF0"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="  or  " android:textColor="#BFC8D2" android:textSize="12sp"/>
+            <View android:layout_width="0dp" android:layout_height="1dp"
+                android:layout_weight="1" android:background="#E8ECF0"/>
+        </LinearLayout>
+
+        <!-- Register link -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New to HeyShift? "
+                android:textSize="14sp"
+                android:textColor="#8A95A3"/>
+
+            <TextView
+                android:id="@+id/tv_go_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create account"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#F5A623"/>
+        </LinearLayout>
+
+        <Space android:layout_width="match_parent" android:layout_height="32dp"/>
+
+    </LinearLayout>
+</ScrollView>
