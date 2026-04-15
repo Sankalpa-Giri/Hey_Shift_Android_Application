@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+<<<<<<< HEAD
     <!-- Networking -->
     <uses-permission android:name="android.permission.INTERNET"/>
     <!-- Audio -->
@@ -11,6 +12,11 @@
     <!-- GPS -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+=======
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+>>>>>>> ec9c58831b83e21122cc7affc0a4e19d1e7c7676
 
     <application
         android:networkSecurityConfig="@xml/network_security_config"
@@ -23,6 +29,7 @@
         android:roundIcon="@mipmap/audibot_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AudiBot">
+<<<<<<< HEAD
 
         <!-- Launcher: LoginActivity -->
         <activity
@@ -84,6 +91,22 @@
             android:theme="@style/Theme.AudiBot"
             android:windowSoftInputMode="stateHidden|adjustResize"/>
 
+=======
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="Hey Shift"
+            android:theme="@style/Theme.App.Starting"
+            android:windowSoftInputMode="adjustResize"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+>>>>>>> ec9c58831b83e21122cc7affc0a4e19d1e7c7676
     </application>
 
 </manifest>

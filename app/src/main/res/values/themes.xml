@@ -1,4 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+<<<<<<< HEAD
     <style name="Base.Theme.AudiBot" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Transparent bars for all phones -->
         <item name="android:statusBarColor">@android:color/transparent</item>
@@ -8,10 +9,32 @@
         <item name="android:windowLightNavigationBar">true</item>
     </style>
     <style name="Theme.AudiBot" parent="Base.Theme.AudiBot" />
+=======
+
+    <style name="Base.Theme.AudiBot" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Transparent bars for all phones -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+
+        <!-- Light icons -->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+    </style>
+
+    <style name="Theme.AudiBot" parent="Base.Theme.AudiBot" />
+
+>>>>>>> ec9c58831b83e21122cc7affc0a4e19d1e7c7676
     <style name="Theme.App.Starting" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/sky_blue</item>
         <item name="postSplashScreenTheme">@style/Theme.AudiBot</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/audibot_launcher_foreground</item>
         <item name="windowSplashScreenAnimationDuration">3000</item>
     </style>
+<<<<<<< HEAD
 </resources>
+=======
+
+</resources>
+>>>>>>> ec9c58831b83e21122cc7affc0a4e19d1e7c7676

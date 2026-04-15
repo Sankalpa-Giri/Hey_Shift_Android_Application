@@ -1,7 +1,12 @@
 *.iml
+<<<<<<< HEAD
 .gradle/
 **/.gradle/
 local.properties
+=======
+.gradle
+/local.properties
+>>>>>>> ec9c58831b83e21122cc7affc0a4e19d1e7c7676
 /.idea/caches
 /.idea/libraries
 /.idea/modules.xml
@@ -14,6 +19,7 @@ local.properties
 .externalNativeBuild
 .cxx
 local.properties
+<<<<<<< HEAD
 
 # Important additions
 .env
@@ -22,3 +28,5 @@ local.properties
 __pycache__/
 *.log
 node_modules/
+=======
+>>>>>>> ec9c58831b83e21122cc7affc0a4e19d1e7c7676

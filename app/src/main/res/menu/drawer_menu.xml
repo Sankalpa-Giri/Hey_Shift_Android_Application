@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+<<<<<<< HEAD
     <item
         android:id="@+id/nav_profile"
         android:title="Profile"
@@ -13,3 +14,22 @@
         android:title="Sign Out"
         android:icon="@android:drawable/ic_menu_close_clear_cancel"/>
 </menu>
+=======
+
+    <item
+        android:id="@+id/nav_profile"
+        android:title="@string/profile"
+        android:icon="@drawable/queen"/>
+
+    <item
+        android:id="@+id/nav_settings"
+        android:title="@string/settings"
+        android:icon="@drawable/settings"/>
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="@string/logout"
+        android:icon="@drawable/logout"/>
+
+</menu>
+>>>>>>> ec9c58831b83e21122cc7affc0a4e19d1e7c7676

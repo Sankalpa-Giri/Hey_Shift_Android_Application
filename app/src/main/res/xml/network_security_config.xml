@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <!--
     FIX: Allows cleartext (HTTP) traffic to local network IPs so you can
     point BASE_URL at 192.168.x.x during development without a certificate.
@@ -28,4 +29,8 @@
         <domain includeSubdomains="true">ngrok-free.app</domain>
         <domain includeSubdomains="true">ngrok.io</domain>
     </domain-config>
+=======
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+>>>>>>> ec9c58831b83e21122cc7affc0a4e19d1e7c7676
 </network-security-config>
