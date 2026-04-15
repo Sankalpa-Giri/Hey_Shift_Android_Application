@@ -393,17 +393,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
-## 👩‍💻 Author
 
-<div align="center">
-
-**Harshita Sharma**
-B.Tech CSE | Full Stack Developer | Android Developer
-
-[![GitHub](https://img.shields.io/badge/GitHub-harshita624-181717?style=for-the-badge&logo=github)](https://github.com/harshita624)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Harshita_Sharma-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/harshita-sharma-b782942a7)
-
-</div>
 
 ---
 
